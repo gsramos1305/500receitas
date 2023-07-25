@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>500receitaszero</title>
+    <title>teste</title>
 
     <style>
 
@@ -17,13 +17,13 @@
 
         body {
             background-color: darkslateblue;
+            margin: 0;
         }
 
         .div-h1 {
             margin: auto;
-            min-width: 350px;
-            max-width: 800px;
             margin-top: 30px;
+            max-width: 800px;
         }
 
         h1 {
@@ -33,6 +33,7 @@
             font-weight: 700;
             color: white;
             text-indent: 10px;
+            margin: 0;
         }
 
         h2 {
@@ -41,25 +42,48 @@
             color: white;
         }
 
-        .video {
-            background-color: white;
+        .container {
+            width: 100%;
             margin: auto;
-            width: 350px;
-            height: 200px;
+            max-width: 800px;
+        }
+
+        .video {
+            width: 100%;
+            padding-top: 56.25%;
+            position: relative;
+            margin: auto;
+        }
+
+        .video iframe {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 5%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+            margin: 0;
         }
     </style>
 </head>
 <body>
     <div class="div-h1">
         <h1>
-            Descubra como esse e-book com receitas especiais pode fazer você diminuir o nível de açúcar no sangue e facilitar sua vida na hora de cozinhar
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore, voluptatibus architecto unde enim tenetur expedita quasi impedit veniam eius.
+        <h2>
+            blalba
+        </h2>
         </h1>
     </div>
-    <h2>
-        Poucos diabéticos conhecem...
-    </h2>
-    <div class="video">
-        
+    
+    <div class="container">
+        <div class="video">
+            <iframe src="https://www.youtube.com/embed/Vvr6hL2R9jw" title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                allowfullscreen></iframe>
+        </div>
     </div>
 
 </body>
