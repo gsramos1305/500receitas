@@ -8,7 +8,7 @@
 
 body {
     background-color: darkslateblue;
-    margin: 0;
+    margin: 10px;
 }
 
 .div-h1 {
@@ -33,23 +33,38 @@ h2 {
     color: white;
 }
 
-.container-video {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .div-video {
-    width: 100%;
+    position: relative;
     padding-bottom: 56.25%;
-    margin: auto;
+}
+
+.div-video > iframe {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+}
+
+.container-beneficios {
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.container-video > iframe {
-    width: auto;
-    height: auto;
+.container-beneficios > h1 {
+    color: black;
+}
+
+.container-produto {
+    background-color: grey;
+}
+
+.container-mecanismo {
+    background-color: white;
+}
+
+.container-mecanismo > h1 {
+    background-color: black;
 }
