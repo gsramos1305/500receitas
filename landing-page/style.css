@@ -60,7 +60,17 @@ h2 {
 }
 
 #comprar {
+    width: 200px;
+    height: 50px;
+    background-image: linear-gradient(0deg, greenyellow, white);
+    
+    color: black;
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
     margin-block: 50px;
+    border-radius: 20px;
+
 }
 
 button:hover {
