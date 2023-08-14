@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 * {
     padding: 0;
@@ -8,7 +9,7 @@
 
 body {
     background-color: darkslateblue;
-    margin: 10px;
+    margin: 0px;
     background-image: linear-gradient(330deg, #FF5BD7 0%, #39325E 100%);
 }
 
@@ -24,13 +25,12 @@ body {
 }
 
 h1 {
+    margin-inline: 10px;
     font-size: 32px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
     color: white;
-    text-indent: 10px;
-    margin: 0;
 }
 
 h2 {
@@ -41,6 +41,7 @@ h2 {
 }
 
 .div-video {
+    margin: 10px;
     position: relative;
     padding-bottom: 56.25%;
 }
@@ -62,8 +63,7 @@ h2 {
 #comprar {
     width: 200px;
     height: 50px;
-    background-image: linear-gradient(0deg, greenyellow, white);
-    
+    background-image: linear-gradient(0deg, greenyellow, white); 
     color: black;
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
@@ -79,15 +79,45 @@ button:hover {
 
 #compra-segura {
     max-width: 100%;
+    padding-block-end: 25px;
 }
 
 .beneficios {
     background-color: white;
+    display: flex;
+    flex-flow: column wrap;
 }
 
-.h1-beneficios{
+.beneficios > img {
+    width: 50px;
+    align-self: center;
+    margin-block: 20px;
+}
+
+.beneficios > h1 {
+    margin-block-start: 50px;
+    text-align: center;
+    font-size: 29px;
+    font-weight: 600;
     color: purple;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.beneficios > h2 {
+    text-transform: uppercase;
+    text-align: center;
+    color: purple;
+    font-family: 'Poppins', sans-serif;
+    font-size: 25px;
+}
+
+.beneficios > p {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    text-indent: 10px;
+    color: grey;
 }
 
 .container-produto {
