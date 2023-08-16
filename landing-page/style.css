@@ -4,7 +4,6 @@
 * {
     padding: 0;
     margin: 0;
-    font-family: 'Rubik', sans-serif;
 }
 
 body {
@@ -22,7 +21,9 @@ body {
     margin: auto;
     margin-top: 30px;
     max-width: 800px;
+    font-family: 'Rubik', sans-serif;
 }
+
 
 h1 {
     margin-inline: 10px;
@@ -129,6 +130,7 @@ button:hover {
     justify-content: center;
     align-items: center;
     padding-block-end: 40px;
+    font-family: 'Poppins', sans-serif;
 }
 
 #produto > div {
@@ -150,7 +152,6 @@ button:hover {
 
 #produto > div > h2 {
     color: purple;
-    font-family: 'Poppins', sans-serif;
     font-size: 2em;
 }
 
@@ -158,7 +159,6 @@ button:hover {
     text-align: center;
     padding-inline: 10px;
     font-size: 18px;
-    font-family: 'Poppins', sans-serif;
     color: grey;
 }
 
@@ -167,6 +167,7 @@ button:hover {
     flex-flow: column wrap;
     background-color: white;
     padding-block-end: 40px;
+        font-family: 'Poppins', sans-serif;
 }
 
 #mecanismo > h1 {
@@ -179,6 +180,35 @@ button:hover {
     font-size: 19px;
     text-align: center;
     color: grey;
-    font-family: 'Poppins', sans-serif;
     padding-inline: 10px;
 }
+
+#objection {
+    background-color: grey;
+    font-family: 'Poppins', sans-serif;
+}
+
+#objection > ul {
+    margin-left: 20px;
+}
+
+#depoimentos {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+#depoimentos > h1 {
+    color: black;
+    width: 100%;
+}
+
+#depoimentos > div.depoimentos {
+    background-color: black;
+    border: 1px solid white;
+    width: 400px;
+    height: 400px;
+}
+
