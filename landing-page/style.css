@@ -212,3 +212,56 @@ button:hover {
     height: 400px;
 }
 
+#garantia {
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    padding-block: 25px;
+}
+
+#garantia > h1 {
+    color: black;
+    margin-block: 25px;
+}
+
+#accordion {
+    list-style: none;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding-block-end: 50px;
+}
+
+#accordion li label {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer;
+    margin: 10px;
+
+}
+
+#accordion li label span {
+    transform: rotate(90deg);
+    font-size: 20px;
+}
+
+#accordion label + input[type="radio"] {
+    display: none;
+}
+
+#accordion .content {
+    padding: 0 10px;
+    line-height: 26px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 1s;
+    color: grey;
+}
+#accordion label + input[type="radio"]:checked + .content {
+    max-height: 400px;
+     
+}
+
