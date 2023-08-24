@@ -129,7 +129,7 @@ button:hover {
     flex-flow: column wrap;
     justify-content: center;
     align-items: center;
-    padding-block-end: 40px;
+    padding-block: 40px;
     font-family: 'Poppins', sans-serif;
 }
 
