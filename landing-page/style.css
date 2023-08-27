@@ -216,7 +216,7 @@ button:hover {
 }
 
 #cta {
-    background-color: purple;
+    background-image: linear-gradient(180deg, rgb(12, 1, 110), rgb(119, 107, 233));
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
