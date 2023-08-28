@@ -17,15 +17,23 @@ body {
     flex-flow: column wrap;
 }
 
+main {
+    display: flex;
+    flex-flow: column wrap;
+    padding-block-end: 25px;
+    height: 750px;
+}
+
 .div-h1 {
     margin: auto;
-    margin-top: 30px;
+    margin-block-start: 30px;
+    margin-block-end: 20px;
     max-width: 800px;
     font-family: 'Rubik', sans-serif;
 }
 
 
-h1 {
+.div-h1 h1 {
     margin-inline: 10px;
     font-size: 30px;
     text-align: center;
@@ -34,7 +42,7 @@ h1 {
     color: white;
 }
 
-h2 {
+.div-h1 h2 {
     margin: 10px;
     text-align: center;
     font-size: 20px;
@@ -43,6 +51,7 @@ h2 {
 
 .div-video {
     margin: auto;
+    margin-block: 0;
     width: 90%;
     position: relative;
     padding-bottom: 50%;
@@ -82,8 +91,7 @@ button:hover {
 
 #compra-segura {
     align-self: center;
-    max-width: 95%;
-    padding-block-end: 25px;
+    max-width: 90%;
 }
 
 .beneficios {
@@ -128,8 +136,8 @@ button:hover {
 #produto {
     display: flex;
     background-color: purple;
-    flex-flow: column wrap;
     justify-content: center;
+    flex-flow: row wrap;
     align-items: center;
     padding-block: 40px;
     font-family: 'Poppins', sans-serif;
@@ -139,16 +147,17 @@ button:hover {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-around;
-    margin-block-start: 20px;
+    margin: 20px;
     background-color: white;
-    width: 90%;
+    width: 400px;
     height: 400px;
     border-radius: 30px;
     box-shadow: 0 0 15px black;
+    text-align: center;
 }
 
 #produto > div > img {
-    width: 100px;
+    width: 300px;
     align-self: center;
 }
 
@@ -175,6 +184,7 @@ button:hover {
 #mecanismo > h1 {
     margin-block-start: 40px;
     color: purple;
+    text-align: center;
 }
 
 #mecanismo > p {
@@ -189,9 +199,11 @@ button:hover {
     background-color: grey;
     font-family: 'Poppins', sans-serif;
 }
-
+#objection h1 {
+    text-align: center;
+}
 #objection > ul {
-    margin-left: 20px;
+    margin-left: 30px;
 }
 
 #depoimentos {
@@ -206,6 +218,7 @@ button:hover {
 #depoimentos > h1 {
     color: black;
     width: 100%;
+    text-align: center;
 }
 
 #depoimentos > div.depoimentos {
@@ -216,21 +229,20 @@ button:hover {
 }
 
 #cta {
-    background-image: linear-gradient(180deg, rgb(12, 1, 110), rgb(119, 107, 233));
+    background-image: linear-gradient(360deg, rgb(12, 2, 104), rgb(83, 80, 112));
     display: flex;
-    flex-flow: column wrap;
+    flex-flow: column nowrap;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    height: 700px;
     font-family: 'Rubik', sans-serif;
-    padding-block-start: 50px;
+    padding-block: 25px;
 }
 #cta #lista-conteudo ul li {
     color: white;
 }
-#cta img {
+#cta #capa-ipad {
     width: 100%;
+    max-width: 400px;
 }
 #cta p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
