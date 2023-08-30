@@ -43,8 +43,8 @@ main {
 
 .video-wrapper {
     max-width: 800px;
-    width: 100%;
     margin: auto;
+    padding-inline: 20px;
 }
 
 .video-container {
@@ -68,7 +68,7 @@ main {
 }
 
 #comprar {
-    padding: 25px;
+    padding: 20px;
     background-color: rgb(65, 161, 65);
     color: white;
     font-family: 'Rubik', sans-serif;
@@ -93,18 +93,19 @@ button:hover {
 
 .beneficios {
     background-color: white;
+    padding-block-end: 20px;
+}
+.box-beneficios {
+    background-color: white;
     display: flex;
     flex-flow: column wrap;
-    padding-block-end: 30px;
+    margin: 30px;
+    padding: 20px;
+    box-shadow: 0 0 10px grey;
+    border: none;
+    border-radius: 30px;
 }
-
-.beneficios > img {
-    width: 50px;
-    align-self: center;
-    margin-block: 20px;
-}
-
-.beneficios > h1 {
+.beneficios>h1 {
     margin-block-start: 50px;
     text-align: center;
     font-size: 29px;
@@ -112,20 +113,24 @@ button:hover {
     color: purple;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-
-.beneficios > h2 {
+.box-beneficios > img {
+    width: 50px;
+    align-self: center;
+    margin-block-end: 20px;
+}
+.box-beneficios > h2 {
     text-transform: uppercase;
     text-align: center;
     color: purple;
     font-family: 'Poppins', sans-serif;
-    font-size: 25px;
+    font-size: 24px;
+    padding-block: 20px;
 }
-
-.beneficios > p {
+.box-beneficios > p {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 16px;
     text-indent: 10px;
     color: grey;
     max-width: 900px;
@@ -133,39 +138,47 @@ button:hover {
 }
 
 #produto {
-    display: flex;
     background-color: purple;
-    justify-content: center;
-    flex-flow: row wrap;
-    align-items: center;
-    padding-block: 40px;
     font-family: 'Poppins', sans-serif;
 }
-
-#produto > div {
+.produtos-wrapper {
+    display: flex;
+    background-color: purple;
+    flex-flow: wrap;
+    margin: 0 auto;
+    max-width: 800px;
+}
+#produto h1 {
+    width: 100%;
+    text-align: center;
+}
+.div-produtos{
     display: flex;
     flex-flow: column wrap;
+    flex-basis: calc(100% - 40px);
     justify-content: space-around;
-    margin: 20px;
     background-color: white;
-    width: 400px;
-    height: 400px;
+    margin: 20px;
+    padding: 20px;
     border-radius: 30px;
     box-shadow: 0 0 15px black;
     text-align: center;
+    box-sizing: border-box;
 }
-
-#produto > div > img {
-    width: 300px;
+@media (min-width: 700px) {
+    .div-produtos {
+        flex-basis: calc(33.33% - 40px);
+    }
+}
+.div-produtos > img {
+    width: 100%;
     align-self: center;
 }
-
-#produto > div > h2 {
+.div-produtos > h2 {
     color: purple;
     font-size: 2em;
 }
-
-#produto > div > p {
+.div-produtos > p {
     text-align: center;
     padding-inline: 10px;
     font-size: 18px;
