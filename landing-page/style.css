@@ -13,7 +13,8 @@ body {
 }
 
 main {
-    padding-block-end: 40px;
+    background-color: purple;
+    padding-block-end: 0px;
 }
 
 .div-h1 {
@@ -151,6 +152,7 @@ button:hover {
 #produto h1 {
     width: 100%;
     text-align: center;
+    color: white;
 }
 .div-produtos{
     display: flex;
@@ -161,7 +163,7 @@ button:hover {
     margin: 20px;
     padding: 20px;
     border-radius: 30px;
-    box-shadow: 0 0 15px black;
+    box-shadow: 0 0 10px grey;
     text-align: center;
     box-sizing: border-box;
 }
