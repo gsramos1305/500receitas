@@ -15,6 +15,9 @@ body {
 main {
     background-color: rgb(23, 23, 58);
     padding-block: 30px;
+    background-image: linear-gradient(to bottom, rgb(23, 23, 58), rgb(153, 57, 108));
+    background-size: 100% ;
+    background-repeat: no-repeat;
 }
 
 .div-h1 {
@@ -25,8 +28,7 @@ main {
 
 
 .div-h1 h1 {
-    margin-inline: 10px;
-    font-size: 30px;
+    font-size: 32px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
@@ -96,11 +98,15 @@ button:hover {
 .beneficios {
     background-color: white;
     padding-block: 20px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
 }
 .box-beneficios {
     background-color: white;
     display: flex;
     flex-flow: column wrap;
+    max-width: 700px;
     margin: 30px;
     padding: 20px;
     box-shadow: 0 0 10px grey;
@@ -215,7 +221,7 @@ button:hover {
 
 #mecanismo > p {
     margin-block-start: 30px;
-    font-size: 19px;
+    font-size: 18px;
     text-align: center;
     color: grey;
     padding-inline: 10px;
