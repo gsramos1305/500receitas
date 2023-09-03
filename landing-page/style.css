@@ -97,8 +97,9 @@ button:hover {
 
 .beneficios {
     background-color: white;
-    padding-block: 20px;
+    padding-block: 50px;
     display: flex;
+    gap: 20px;
     flex-flow: column;
     align-items: center;
 }
@@ -150,15 +151,23 @@ button:hover {
     background-color: rgb(23, 23, 58);
     font-family: 'Poppins', sans-serif;
     padding-block: 30px;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
 }
 .produtos-wrapper {
     display: flex;
-    flex-flow: wrap;
-    margin: 0 auto;
+    align-items: stretch;
+    justify-content: space-around;
+    flex-flow: row wrap;
     max-width: 800px;
+    margin: 0 auto;
+    gap: 20px;
 }
 #produto h2 {
     font-family: 'Rubik', sans-serif;
+    width: 100%;
     font-size: 32px;
     font-weight: 600;
     text-align: center;
@@ -173,7 +182,6 @@ button:hover {
     flex-basis: calc(100% - 40px);
     justify-content: space-around;
     background-color: white;
-    margin: 20px;
     padding: 20px;
     border-radius: 30px;
     box-shadow: 0 0 10px black;
@@ -182,7 +190,7 @@ button:hover {
 }
 @media (min-width: 700px) {
     .div-produtos {
-        flex-basis: calc(33.33% - 40px);
+        flex-basis: calc(33.33% - 60px);
     }
 }
 .div-produtos > img {
@@ -191,6 +199,7 @@ button:hover {
 }
 .div-produtos > h3 {
     color: purple;
+    font-weight: 500;
     padding: 10px;
     font-size: 27px;
     font-family: 'Rubik', sans-serif;
