@@ -16,7 +16,7 @@ main {
     background-color: rgb(23, 23, 58);
     padding-block: 30px;
     background-image: linear-gradient(to bottom, rgb(23, 23, 58), rgb(153, 57, 108));
-    background-size: 100% ;
+    background-size: 100%;
     background-repeat: no-repeat;
 }
 
@@ -78,12 +78,12 @@ main {
     font-size: 18px;
     text-shadow: 0 0 10px grey;
     border-style: groove;
-    border-width: 0 5px 5px ;
+    border-width: 0 5px 5px;
     border-color: #04963C;
     border-radius: 30px;
     margin-block: 50px;
     margin-inline: 10px;
-    
+
 }
 
 button:hover {
@@ -107,6 +107,7 @@ button:hover {
     flex-flow: row wrap;
     align-items: center;
 }
+
 .box-beneficios {
     display: flex;
     flex-flow: column wrap;
@@ -117,6 +118,7 @@ button:hover {
     border-radius: 30px;
     gap: 15px;
 }
+
 @media (min-width: 768px) {
     .box-beneficios {
         flex-basis: calc(25% - 40px);
@@ -125,6 +127,7 @@ button:hover {
         align-self: baseline;
     }
 }
+
 .beneficios>h1 {
     padding-inline: 10px;
     width: 100%;
@@ -134,13 +137,14 @@ button:hover {
     color: #39325E;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.box-beneficios > img {
+
+.box-beneficios>img {
     width: 50px;
     align-self: center;
     margin-block-end: 20px;
-    stroke: greenyellow;
 }
-.box-beneficios > h2 {
+
+.box-beneficios>h2 {
     text-transform: uppercase;
     text-align: center;
     color: #39325E;
@@ -148,7 +152,8 @@ button:hover {
     font-family: 'Poppins', sans-serif;
     font-size: 24px;
 }
-.box-beneficios > p {
+
+.box-beneficios>p {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-weight: 300;
@@ -171,6 +176,7 @@ button:hover {
     justify-content: center;
     gap: 20px;
 }
+
 .produtos-wrapper {
     display: flex;
     align-items: stretch;
@@ -180,6 +186,7 @@ button:hover {
     gap: 20px;
     padding-inline: 10px;
 }
+
 #produto h2 {
     font-family: 'Rubik', sans-serif;
     width: 100%;
@@ -192,7 +199,8 @@ button:hover {
     width: 100%;
     padding-inline: 10px;
 }
-.div-produtos{
+
+.div-produtos {
     display: flex;
     flex-flow: column wrap;
     flex-basis: 90%;
@@ -205,15 +213,18 @@ button:hover {
     text-align: center;
     box-sizing: border-box;
 }
+
 @media (min-width: 768px) {
     .div-produtos {
         flex-basis: calc(33.33% - 15px);
     }
 }
-.div-produtos > img {
+
+.div-produtos>img {
     width: 100%;
 }
-.div-produtos > h3 {
+
+.div-produtos>h3 {
     color: purple;
     align-self: center;
     font-weight: 400;
@@ -221,7 +232,8 @@ button:hover {
     font-size: 27px;
     font-family: 'Rubik', sans-serif;
 }
-.div-produtos > p {
+
+.div-produtos>p {
     text-align: center;
     font-family: 'Poppins', sans-serif;
     padding-inline: 10px;
@@ -240,47 +252,129 @@ button:hover {
     font-family: 'Poppins', sans-serif;
 }
 
-#mecanismo > h1 {
+#mecanismo>h2 {
     color: #39325E;
     text-align: center;
     font-weight: 600;
     font-size: 32px;
 }
 
-#mecanismo > p {
+#mecanismo>p {
     margin-block-start: 30px;
     font-size: 18px;
     text-align: center;
-    color: grey;
+    color: #39325E;
+    font-weight: 400;
     padding-inline: 10px;
     max-width: 800px;
     margin: auto;
 }
 
-
-
-#depoimentos {
-    background-color: white;
-    font-family: 'Poppins', sans-serif;
+.vantagens {
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    padding-block: 50px;
+    align-items: center;
+    gap: 10px;
+    align-self: center;
 }
 
-#depoimentos > h1 {
-    color: black;
+.check-icon {
+    width: 50px;
+    height: 50px;
+    stroke: #39325E;
+}
+
+.vantagens span {
+    color: #2a2a2a;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+
+.depoimentos {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    padding-block: 30px;
+}
+
+.depoimentos>h2 {
+    font-size: 36px;
+    color: #39325E;
     width: 100%;
+    padding-inline: 10px;
     text-align: center;
 }
 
-#depoimentos > div.depoimentos {
-    background-color: black;
-    border: 1px solid white;
-    width: 90%;
+.depoimentos p {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
 }
 
+.media {
+    width: 200px;
+    height: 200px;
+    border: 1px solid rgba(128, 128, 128, 0.507);
+    
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+.texto {
+    font-size: 16px;
+}
+.numero {
+    font-size: 86px;
+}
+.stars {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+}
+.star {
+    stroke: rgb(255, 238, 0);
+    width: 30px;
+    height: 30px;
+    fill: yellow;
+}
+.box-depoimentos {
+    display: flex;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 10px;
 
+    background-color: white;
+    border: 1px solid grey;
+    width: 90%;
+}
+.img-depoimento-1 {
+    width: 100%;
+}
+.pessoa {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    gap: 10px;
+    width: 100%;
+}
+.img-pessoa {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 50%;
+}
+.nome-pessoa {
+    font-size: 18px;
+    font-weight: 400;
+}
+.star-depoimento {
+    width: 25px;
+    height: 25px;
+}
 
 #cta {
     background-image: linear-gradient(360deg, rgb(12, 2, 104), rgb(83, 80, 112));
@@ -293,12 +387,14 @@ button:hover {
     padding-inline: 10px;
     gap: 30px;
 }
+
 #cta h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 35px;
     color: white;
     text-align: center;
 }
+
 #cta h2 {
     color: #FF00FF;
     font-family: 'Poppins', sans-serif;
@@ -306,10 +402,12 @@ button:hover {
     font-weight: 600;
     text-align: center;
 }
+
 #cta #capa-ipad {
     width: 100%;
     max-width: 400px;
 }
+
 #cta p {
     font-family: 'Poppins', sans-serif;
     font-size: 35px;
@@ -317,6 +415,7 @@ button:hover {
     font-weight: 700;
     color: white;
 }
+
 #checkout-cta {
     display: flex;
     flex-flow: column wrap;
@@ -330,7 +429,7 @@ button:hover {
     padding-block: 25px;
 }
 
-#garantia > h1 {
+#garantia>h1 {
     color: black;
     margin-block: 25px;
     text-align: center;
@@ -361,7 +460,7 @@ button:hover {
     font-size: 20px;
 }
 
-#accordion label + input[type="radio"] {
+#accordion label+input[type="radio"] {
     display: none;
 }
 
@@ -373,8 +472,8 @@ button:hover {
     transition: max-height 1s;
     color: grey;
 }
-#accordion label + input[type="radio"]:checked + .content {
-    max-height: 400px;
-     
-}
 
+#accordion label+input[type="radio"]:checked+.content {
+    max-height: 400px;
+
+}
