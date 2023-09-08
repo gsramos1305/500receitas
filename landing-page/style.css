@@ -452,6 +452,9 @@ button:hover {
     gap: 20px;
 }
 
+.depoimento-print {
+    width: 100%;
+}
 @media (min-width: 768px) {
     .depoimentos-wrapper {
         display: grid;
@@ -532,7 +535,56 @@ button:hover {
 }
 
 
+.informacoes {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    gap: 30px;
+    padding-block: 30px;
 
+    text-align: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+.p--1 {
+    font-size: 24px;
+    font-weight: 700;
+    padding-inline: 10px;
+    max-width: 768px;
+}
+.p--2 {
+    font-size: 18px;
+    font-weight: 500;
+    padding-inline: 10px;
+    max-width: 768px;
+}
+.p--3 {
+    font-size: 20px;
+    font-weight: 300;
+    padding-inline: 10px;
+    max-width: 768px;
+}
+
+.dados {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+    align-items: center;
+    padding-block: 30px;
+    padding-inline: 10px;
+
+    text-align: center;
+    color: white;
+    font-family: 'Rubik', sans-serif;
+}
+.numeros {
+    font-size: 36px;
+    font-weight: 700;
+}
+.dados-texto {
+    font-size: 18px;
+    font-weight: 400;
+}
 #garantia {
     font-family: 'Poppins', sans-serif;
     background-color: white;
