@@ -33,6 +33,7 @@ main {
     text-transform: uppercase;
     font-weight: 700;
     color: white;
+    padding-inline: 10px;
 }
 
 .div-h1 h2 {
@@ -103,32 +104,34 @@ button:hover {
     display: flex;
     align-items: first baseline;
     justify-content: center;
-    gap: 10px;
+    gap: 70px;
     flex-flow: row wrap;
     align-items: center;
 }
 
 .box-beneficios {
     display: flex;
-    flex-flow: column wrap;
-    width: 100%;
+    flex-flow: column nowrap;
     background-color: white;
     padding-inline: 10px;
     border: none;
     border-radius: 30px;
     gap: 15px;
 }
-
+.beneficios-wrapper{
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 30px;
+}
 @media (min-width: 768px) {
-    .box-beneficios {
-        flex-basis: calc(25% - 40px);
-        flex-grow: 1;
-        max-width: 300px;
-        align-self: baseline;
+    .beneficios-wrapper {
+        display: flex;
+        flex-flow: row nowrap;
+        max-width: 1080px;
     }
 }
 
-.beneficios>h1 {
+.h2-beneficios {
     padding-inline: 10px;
     width: 100%;
     text-align: center;
@@ -141,10 +144,9 @@ button:hover {
 .box-beneficios>img {
     width: 50px;
     align-self: center;
-    margin-block-end: 20px;
 }
 
-.box-beneficios>h2 {
+.box-beneficios>h3 {
     text-transform: uppercase;
     text-align: center;
     color: #39325E;
@@ -192,7 +194,7 @@ button:hover {
     width: 100%;
     max-width: 800px;
     font-size: 32px;
-    font-weight: 600;
+    font-weight: 700;
     text-align: center;
     color: white;
     line-height: 1.33em;
@@ -539,7 +541,7 @@ button:hover {
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     padding-block: 30px;
 
     text-align: center;
@@ -547,7 +549,7 @@ button:hover {
     font-family: 'Rubik', sans-serif;
 }
 .p--1 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: 700;
     padding-inline: 10px;
     max-width: 768px;
@@ -568,22 +570,59 @@ button:hover {
 .dados {
     display: flex;
     flex-flow: column nowrap;
-    gap: 30px;
     align-items: center;
-    padding-block: 30px;
-    padding-inline: 10px;
+    padding-inline: 20px;
+    gap: 30px;
 
     text-align: center;
     color: white;
     font-family: 'Rubik', sans-serif;
 }
+@media screen and (min-width: 768px) {
+    .dados {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        max-width: 1080px;
+        row-gap: 0;
+    }
+    .numero-1 {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .dado-1 {
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .numero-2 {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    .dado-2 {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+    }
+    .numero-3 {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+    .dado-3 {
+        grid-column: 3 / 4;
+        grid-row: 2 / 3;
+    }
+    .numeros {
+        font-size: 32px;
+    }
+}
+
 .numeros {
-    font-size: 36px;
+    font-size: 48px;
     font-weight: 700;
 }
 .dados-texto {
     font-size: 18px;
     font-weight: 400;
+    padding-inline: 10px;
 }
 #garantia {
     font-family: 'Poppins', sans-serif;
