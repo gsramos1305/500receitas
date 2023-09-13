@@ -259,6 +259,7 @@ button:hover {
     text-align: center;
     font-weight: 600;
     font-size: 32px;
+    padding: 10px;
 }
 
 #mecanismo>p {
@@ -334,13 +335,7 @@ button:hover {
     font-weight: 700;
     color: white;
 }
-.container-checkout-2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column nowrap;
-    gap: 50px;
-}
+
 
 .depoimentos {
     display: flex;
@@ -804,6 +799,31 @@ s {
     border-color: #04963C;
     border-radius: 30px;
 }
+.container-checkout-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column nowrap;
+    gap: 50px;
+}
+
+.compra-segura-p {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+
+    color: #FF00FF;
+}
+
+.cadeado {
+    width: 24px;
+    height: 24px;
+    stroke: #FF00FF;
+}
+
+
 
 #accordion {
     list-style: none;
