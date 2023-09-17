@@ -12,6 +12,7 @@ body {
     background-repeat: no-repeat;
     margin: 0px;
     padding-block: 30px;
+    height: 100vh;
 }
 
 main {
@@ -29,7 +30,7 @@ main {
 
 
 .div-h1 h1 {
-    font-size: 32px;
+    font-size: 28px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
@@ -41,7 +42,7 @@ main {
     margin: 10px;
     text-align: center;
     text-transform: lowercase;
-    font-size: 20px;
+    font-size: 16px;
     color: white;
 }
 
@@ -65,8 +66,8 @@ main {
 }
 
 .h2-visivel {
-    font-family: 'Rubik', sans-serif;
-    font-size: 32px;
+    font-family: cursive, 'Arial Narrow', Arial, sans-serif, sans-serif;
+    font-size: 24px;
     color: white;
     text-align: center;
     padding-block: 100px;
@@ -79,7 +80,7 @@ main {
     justify-content: center;
     align-items: center;
     flex-flow: column nowrap;
-    margin-top: 50px;
+    padding-block: 50px;
     gap: 50px;
 }
 #comprar {
