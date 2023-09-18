@@ -10,13 +10,12 @@
 body {
     background-image: linear-gradient(to bottom, rgb(23, 23, 58), rgb(153, 57, 108));
     background-repeat: no-repeat;
+    height: 100vh;
     margin: 0px;
     padding-top: 30px;
 }
 
 main {
-    background-color: rgb(23, 23, 58);
-    background-image: linear-gradient(to bottom, rgb(23, 23, 58), rgb(153, 57, 108));
     background-repeat: no-repeat;
 }
 
@@ -32,7 +31,7 @@ main {
 
 
 .div-h1 h1 {
-    font-size: 36px;
+    font-size: 32px;
     text-align: center;
     text-transform: uppercase;
     font-weight: 700;
@@ -84,6 +83,7 @@ main {
     flex-flow: column nowrap;
     padding-top: 50px;
     gap: 50px;
+
 }
 #comprar {
     flex-basis: 300px;
@@ -561,6 +561,7 @@ button:hover {
     text-align: center;
     color: white;
     font-family: 'Rubik', sans-serif;
+    background-color: #39325E;
 }
 
 .p--1 {
