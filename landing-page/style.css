@@ -20,6 +20,10 @@ main {
     background-repeat: no-repeat;
 }
 
+.content, .content-2{
+    display: none;
+}
+
 .div-h1 {
     margin: auto;
     max-width: 768px;
