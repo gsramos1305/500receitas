@@ -3,4 +3,4 @@ function exibirConteudo() {
     document.querySelector('.content-2').style.display = 'block';
 }
 
-setTimeout(exibirConteudo, 3000)
+setTimeout(exibirConteudo, 270000)

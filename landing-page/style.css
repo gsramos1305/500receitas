@@ -8,18 +8,19 @@
 }
 
 body {
-    background-image: linear-gradient(to bottom, rgb(23, 23, 58), rgb(153, 57, 108));
+    background-color: #39325E;
     background-repeat: no-repeat;
     height: 100vh;
     margin: 0px;
-    padding-top: 30px;
 }
 
 main {
+    padding-block: 20px;
     background-repeat: no-repeat;
 }
 
-.content, .content-2{
+.content,
+.content-2 {
     display: none;
 }
 
@@ -85,6 +86,7 @@ main {
     gap: 50px;
 
 }
+
 #comprar {
     flex-basis: 300px;
     padding: 20px;
@@ -806,6 +808,7 @@ button:hover {
 s {
     color: red;
 }
+
 .botao-comprar {
     width: 250px;
     padding: 20px;
@@ -820,6 +823,7 @@ s {
     border-color: #04963C;
     border-radius: 30px;
 }
+
 .container-checkout-2 {
     display: flex;
     justify-content: center;
